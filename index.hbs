@@ -12,7 +12,7 @@
             <h1 class="blog-title">{{@blog.title}}</h1>
             <h2 class="blog-description">{{@blog.description}}</h2>
             
-            <a class="btn 3">Register</a>
+            <a class="btn last">Register</a>
             <a href="http://spaceapps.hubnob.com/" target="_blank" class='btn'>Watch Live Stream</a><br>
             <i id='header-arrow' class="fa fa-angle-down"></i>
         </div>
@@ -33,8 +33,8 @@
             {{#if @first}}
                 <article class="{{post_class}} first">
             {{else}}
-                {{#if @3}}
-                    <article class="{{post_class}} 3">
+                {{#if @last}}
+                    <article class="{{post_class}} last">
                 {{else}}
                     <article class="{{post_class}}">
                 {{/if}}
