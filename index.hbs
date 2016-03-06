@@ -33,6 +33,12 @@
             {{#if @first}}
                 <article class="{{post_class}} first">
             {{else}}
+                {{#if @third}}
+                    <article class="{{post_class}} third">
+                {{else}}
+                    <article class="{{post_class}} third">
+                {{/if}}
+            {{else}}
                 {{#if @last}}
                     <article class="{{post_class}} last">
                 {{else}}
